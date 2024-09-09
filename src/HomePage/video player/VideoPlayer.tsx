@@ -120,6 +120,8 @@ const VideoPlayer: React.FC = ({ data }: any) => {
       startDate: null,
       endDate: null
     });
+    setStartDate(undefined)
+    setEndDate(undefined)
   };
 
   return (
@@ -170,7 +172,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                   </svg>
                 </div>
                 <div className="txtWrap">
-   
+
                   <div className="txt">Trusted and Safe</div>
                 </div>
               </div>
@@ -327,6 +329,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                             onChange={handleDateChange}
                             isClearable
                             placeholderText="Select date range"
+                            name='date'
                           />
                         </div>
                       </div>
@@ -458,8 +461,8 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                     <div className="contBx">
                       <div className="tle">Bachelor's Package</div>
                       <div className="info">
-                       Starts from ₹3750 per person <br />
-                       Perfect for groups of friends looking for a fun-filled adventure in Goa. Enjoy the freedom to explore and make the most of every moment.
+                        Starts from ₹3750 per person <br />
+                        Perfect for groups of friends looking for a fun-filled adventure in Goa. Enjoy the freedom to explore and make the most of every moment.
                       </div>
                       <div className="btnBx hoveranim">
                         <span>
