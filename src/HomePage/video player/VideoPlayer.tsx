@@ -44,13 +44,16 @@ const VideoPlayer: React.FC = ({ data }: any) => {
     banner2,
     banner3
   ];
-
+  // State to manage the selected date range
+  const [startDate, setStartDate] = useState(undefined);
+  const [endDate, setEndDate] = useState(undefined);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     destination: 'goa',
-    date: null,
+    startDate: null,
+    endDate: null
   });
 
   console.log("formData ===>", formData);
@@ -66,10 +69,17 @@ const VideoPlayer: React.FC = ({ data }: any) => {
     }));
   };
 
-  const handleDateChange = (date: any) => {
-    setFormData((prevValues: any) => ({
-      ...prevValues,
-      date: date,
+
+  // Handle date change for the range picker
+  const handleDateChange = (dates: any) => {
+    const [start, end] = dates;
+    setStartDate(start);
+    setEndDate(end);
+
+    setFormData((prevData) => ({
+      ...prevData,
+      startDate: start,
+      endDate: end,
     }));
   };
 
@@ -107,7 +117,8 @@ const VideoPlayer: React.FC = ({ data }: any) => {
       email: '',
       phone: '',
       destination: 'goa',
-      date: null,
+      startDate: null,
+      endDate: null
     });
   };
 
@@ -123,7 +134,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
         <div className="container">
           <div className="bannerContent">
             <div className="Hd">
-            Excellence in Every Experience
+              Excellence in Every Experience
             </div>
             <div className="subHd">"At Dayout Holidays, we bring you the best of Goa with tailor-made packages that combine adventure, relaxation, and unmatched service. From stunning beaches to exciting water sports and personalized travel plans, we ensure your holiday is nothing short of extraordinary."</div>
             <a href="#!" className="btnMore hoverAnim">
@@ -306,13 +317,14 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                           <label>
                             Date:
                           </label>
-                          <DatePicker className="form-control"
-                            name='date'
-                            required
-                            showIcon
-                            selected={formData.date}
+                          <DatePicker
+                            className="form-control"
+                            selectsRange
+                            startDate={startDate}
+                            endDate={endDate}
                             onChange={handleDateChange}
-                            placeholderText="Select start date"
+                            isClearable
+                            placeholderText="Select date range"
                           />
                         </div>
                       </div>
