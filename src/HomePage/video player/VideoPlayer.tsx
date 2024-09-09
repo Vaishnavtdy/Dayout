@@ -138,9 +138,11 @@ const VideoPlayer: React.FC = ({ data }: any) => {
             </div>
             <div className="subHd">"At Dayout Holidays, we bring you the best of Goa with tailor-made packages that combine adventure, relaxation, and unmatched service. From stunning beaches to exciting water sports and personalized travel plans, we ensure your holiday is nothing short of extraordinary."</div>
             <a href="#!" className="btnMore hoverAnim">
-              <span>
-                Enquire Now
-              </span>
+ <span 
+  onClick={() => window.location.href = '#enquire_now'} 
+  style={{ cursor: 'pointer' }}>
+  Enquire Now
+</span>
             </a>
           </div>
         </div>
@@ -155,7 +157,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
             <img src={backgroundRyt} alt="background" />
           </div>
         </div>
-        <div className="container">
+        <div className="container" id="enquire_now">
           <div className="flexBx">
             <div className="item">
               <div className="conterBx">
@@ -228,7 +230,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
           </div>
         </div>
       </div>
-      <div className="formSec" id="enquire_now">
+      <div className="formSec" >
         <div className="bgImg">
           <img src={formbg} alt="banner" />
         </div>
@@ -250,7 +252,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                       <div className="form-group">
                         <div className="form-box">
                           <label>
-                            Full Name:
+                            Enter Your Full Name
                           </label>
                           <input type="text" name="name" className="form-control" placeholder='Enter your name' onChange={handleChange} value={formData.name} required />
                           {/* <div className="icon">
@@ -265,7 +267,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                       <div className="form-group">
                         <div className="form-box">
                           <label>
-                            Email Address:
+                          Enter Your Email Address
                           </label>
                           <input type="email" name="email" className="form-control" placeholder='Enter your email' onChange={handleChange} value={formData.email} required />
                         </div>
@@ -275,7 +277,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                     <div className="col-item">
                       <div className="form-group">
                         <div className="form-box">
-                          <label>Phone Number</label>
+                          <label>Enter Your Phone Number</label>
                           <Form.Control
                             type="tel"
                             value={formData.phone}
@@ -295,7 +297,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                       <div className="form-group">
                         <div className="form-box">
                           <label>
-                            Desired Destination:
+                           Choose Your Desired Destination
                           </label>
                           <select className="form-control" name="destination"
                             value={formData.destination}
@@ -315,7 +317,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                       <div className="form-group">
                         <div className="form-box">
                           <label>
-                            Date:
+                           Choose The Dates
                           </label>
                           <DatePicker
                             className="form-control"
@@ -461,7 +463,11 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                       </div>
                       <div className="btnBx hoveranim">
                         <span>
-                          Enquire Now
+                 <span 
+  onClick={() => window.location.href = '#enquire_now'} 
+  style={{ cursor: 'pointer' }}>
+  Enquire Now
+</span>     
                         </span>
                       </div>
                     </div>
@@ -484,9 +490,11 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                         Designed for couples seeking a romantic getaway, this package offers intimate experiences and the chance to create lasting memories together.
                       </div>
                       <div className="btnBx hoveranim">
-                        <span>
-                          Enquire Now
-                        </span>
+                      <span 
+  onClick={() => window.location.href = '#enquire_now'} 
+  style={{ cursor: 'pointer' }}>
+  Enquire Now
+</span>
                       </div>
                     </div>
                   </div>
@@ -508,9 +516,11 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                         Tailored for families, this package ensures a balance of relaxation and activities that everyone will enjoy, with the convenience of family-friendly amenities.
                       </div>
                       <div className="btnBx hoveranim">
-                        <span>
-                        Enquire Now
-                        </span>
+                    <span 
+  onClick={() => window.location.href = '#enquire_now'} 
+  style={{ cursor: 'pointer' }}>
+  Enquire Now
+</span>
                       </div>
                     </div>
                   </div>
@@ -533,9 +543,11 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                         Ideal for student groups, this package offers an exciting and educational escape, with activities designed to create unforgettable experiences with friends.
                       </div>
                       <div className="btnBx hoveranim">
-                        <span>
-                        Enquire Now
-                        </span>
+                    <span 
+  onClick={() => window.location.href = '#enquire_now'} 
+  style={{ cursor: 'pointer' }}>
+  Enquire Now
+</span>
                       </div>
                     </div>
                   </div>

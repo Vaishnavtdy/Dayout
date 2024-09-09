@@ -1,34 +1,32 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.slider-container {
-  width: 100vw;  /* Full viewport width */
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Hide the overflowing slides */
-  position: relative;
-}
-
-.slider-wrapper {
-  display: flex;
-  flex-direction: column;
-  transition: transform 1s ease-in-out; /* Smooth transition */
-  height: 100%; /* Ensure the wrapper takes full height */
-}
-
 .slide {
-  width: 100vw;  /* Full viewport width */
-  height: 100vh; /* Full viewport height */
+  position: relative; /* Make the slide a positioning context */
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .slide-image {
   width: 100vw;
   height: 100vh;
-  object-fit: cover; /* Ensures the image covers the slide area */
+  object-fit: cover;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)); /* Gradient overlay */
+  z-index: 1; /* Ensure the gradient appears above the image */
+}
+
+.slide img {
+  position: relative;
+  z-index: 0; /* Ensure the image is behind the gradient */
 }
