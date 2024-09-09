@@ -228,7 +228,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
           </div>
         </div>
       </div>
-      <div className="formSec">
+      <div className="formSec" id="enquire_now">
         <div className="bgImg">
           <img src={formbg} alt="banner" />
         </div>
@@ -359,6 +359,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
           </div>
         </div>
       </div>
+
       <div className="placeSec" id="about_us">
         <div className="container">
           <div className="dFlex">
@@ -455,12 +456,12 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                     <div className="contBx">
                       <div className="tle">Bachelor's Package</div>
                       <div className="info">
-                        o	Starts from ₹3750 per person <br />
-                        o	Perfect for groups of friends looking for a fun-filled adventure in Goa. Enjoy the freedom to explore and make the most of every moment.
+                       Starts from ₹3750 per person <br />
+                       Perfect for groups of friends looking for a fun-filled adventure in Goa. Enjoy the freedom to explore and make the most of every moment.
                       </div>
                       <div className="btnBx hoveranim">
                         <span>
-                          view more
+                          Enquire Now
                         </span>
                       </div>
                     </div>
@@ -479,12 +480,12 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                     <div className="contBx">
                       <div className="tle">Couple's Package</div>
                       <div className="info">
-                        o	Starts from ₹7000 per head <br />
-                        o	Designed for couples seeking a romantic getaway, this package offers intimate experiences and the chance to create lasting memories together.
+                        Starts from ₹7000 per head <br />
+                        Designed for couples seeking a romantic getaway, this package offers intimate experiences and the chance to create lasting memories together.
                       </div>
                       <div className="btnBx hoveranim">
                         <span>
-                          view more
+                          Enquire Now
                         </span>
                       </div>
                     </div>
@@ -503,12 +504,12 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                     <div className="contBx">
                       <div className="tle">Family Package</div>
                       <div className="info">
-                        o	From ₹6500 per head <br />
-                        o	Tailored for families, this package ensures a balance of relaxation and activities that everyone will enjoy, with the convenience of family-friendly amenities.
+                        From ₹6500 per head <br />
+                        Tailored for families, this package ensures a balance of relaxation and activities that everyone will enjoy, with the convenience of family-friendly amenities.
                       </div>
                       <div className="btnBx hoveranim">
                         <span>
-                          view more
+                        Enquire Now
                         </span>
                       </div>
                     </div>
@@ -528,12 +529,12 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                     <div className="contBx">
                       <div className="tle">Student Group Packages</div>
                       <div className="info">
-                        o	Starts from ₹4800 per head <br />
-                        o	Ideal for student groups, this package offers an exciting and educational escape, with activities designed to create unforgettable experiences with friends.
+                        Starts from ₹4800 per head <br />
+                        Ideal for student groups, this package offers an exciting and educational escape, with activities designed to create unforgettable experiences with friends.
                       </div>
                       <div className="btnBx hoveranim">
                         <span>
-                          view more
+                        Enquire Now
                         </span>
                       </div>
                     </div>

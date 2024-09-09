@@ -13,28 +13,60 @@ const FooterSection: React.FC = () => {
             <div className="dFlex">
               <div className="lft">
                 <div className="linkWrap">
+
+
+                 {/* <Accordion className="menuAcco" defaultActiveKey="0">
+
+                  
+                                        <Accordion.Item eventKey="0">
+                                            <Accordion.Header>
+                                                <a href="#" className="menuLink">Home</a>
+                                            </Accordion.Header>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="1">
+                                            <Accordion.Header>
+                                                <a href="#about_us" className="menuLink">About</a>
+                                            </Accordion.Header>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="3">
+                                            <Accordion.Header>
+                                                <a href="#destinations" className="menuLink">Destinations</a>
+                                            </Accordion.Header>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="4">
+                                            <Accordion.Header>
+                                                <a href="#services" className="menuLink">Services</a>
+                                            </Accordion.Header>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="6">
+                                            <Accordion.Header>
+                                                <a href="#enquire_now" className="menuLink">Contact</a>
+                                            </Accordion.Header>
+                                        </Accordion.Item>
+
+                                    </Accordion> */}
+
+
                   <Accordion defaultActiveKey="0" flush>
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>QUICK LINKS</Accordion.Header>
+
                       <Accordion.Body>
                         <div className="footLink">
                           <ul className="menuLnk">
                             <li>
-                              <a href="#aboutus" className="lnk">About      </a>
+                              <a href="#about_us" className="lnk">About </a>
                             </li>
                             <li>
-                              <a href="#!" className="lnk">Personal Account</a>
-                            </li>
-                            <li>
-                              <a href="#!" className="lnk">Business</a>
+                              <a href="#destinations" className="lnk">Destinations</a>
                             </li>
                             <li>
                               <a href="#services" className="lnk">Services</a>
                             </li>
                             <li>
-                              <a href="#!" className="lnk">Company</a>
-
+                              <a href="#enquire_now" className="lnk">Contact</a>
                             </li>
+                           
                           </ul>
                         </div>
                       </Accordion.Body>
