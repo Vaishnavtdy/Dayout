@@ -325,6 +325,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                             onChange={handleDateChange}
                             isClearable
                             placeholderText="Select date range"
+                            name='date'
                           />
                         </div>
                       </div>
