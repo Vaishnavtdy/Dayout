@@ -1,0 +1,55 @@
+/* viewCart.css */
+
+view-cart-container {
+    flex: 1; /* 3/4 of the width */
+    margin-right: 20px; 
+    margin-top: 50px;
+    border: 1px solid #fbf6f6; /* Add border style */
+    padding: 10px;
+    /* Adjust margin as needed */
+  }
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .cart-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .quantity-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .decrement, .increment {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+  }
+  
+  .decrement:hover, .increment:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Add more styles as needed */
+  .view-container {
+    display: flex;
+    margin: 50px;
+  }
+  
+  
+  
+  .subgoal-checkout-container {
+    flex: 3; /* 3/4 of the width */
+    border: 1px solid #ccc; /* Add border style */
+    padding: 10px; /* Add padding for better appearance */
+  }

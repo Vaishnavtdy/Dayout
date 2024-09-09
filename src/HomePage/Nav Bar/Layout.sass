@@ -1,0 +1,500 @@
+
+body
+
+  margin-right: 0px
+  overflow-x: hidden
+  &.modal-open
+    padding-right: 0 !important
+  .modal-backdrop
+    height: 100%
+    &.show
+      background-color: #fff
+      opacity: 1
+      display: block !important
+      @media only screen and ( min-width: 992px )
+        display: none !important
+  .modal
+    display: block !important
+    @media only screen and ( min-width: 992px )
+      display: none !important
+    .modal-dialog
+      width: 100%
+      max-width: 100%
+      .modal-content
+        border: none
+        .modal-header
+          border: none
+          padding: 0
+          .btn-close
+            margin-top: 10px
+            margin-right: 20px
+            opacity: 1
+        .modal-body
+          .respHead
+            width: 100%
+            ul
+              // display: flex
+              // flex-wrap: wrap
+              padding-left: 0
+              li
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                width: 100%
+                padding: 15px 0
+                border-bottom: 1px solid #0000002b
+                max-width: 100%
+                @media only screen and ( min-width: 768px )
+                &:last-of-type
+                  @media only screen and ( min-width: 460px )
+                    display: none
+                .logWrap
+                  display: flex
+                  align-items: center
+                  @media only screen and ( min-width: 460px )
+                    display: none
+                  .item
+                    position: relative
+                    &:first-of-type
+                      padding-right: 15px
+                      @media only screen and ( min-width: 768px )
+                        padding-right: 20px
+                      @media only screen and ( min-width: 1441px )
+                        padding-right: 30px
+
+                      &::after
+                        content: ''
+                        position: absolute
+                        right: 0
+                        top: 0
+                        bottom: 0
+                        margin: auto
+                        background: #D9D9D9
+                        width: 1px
+                        height: 25px
+
+                    &:last-of-type
+                      padding-left: 15px
+                      @media only screen and ( min-width: 768px )
+                        padding-left: 20px
+                      @media only screen and ( min-width: 1441px )
+                        padding-left: 30px
+
+                    .logBx
+                      display: flex
+                      align-items: center
+                      &:hover
+                        .icon
+                          svg
+                            // stoke: #FFEE52
+                        .logLnk
+                          color: #FFEE52
+                      .icon
+                        width: 14px
+                        height: auto
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        @media only screen and ( min-width: 768px )
+                          width: 17px
+                        svg
+                          width: 100%
+                          height: 100%
+                          object-fit: cover
+                          // fill: #000
+                          stroke: #000
+                          // stoke: #FFf
+                          transition: all .6s
+                      .logLnk
+                        font-size: 12px
+                        color: #fff
+                        text-decoration: none
+                        font-weight: 400
+                        font-family: "Archivo", sans-serif
+                        padding-left: 12px
+                        transition: all .6s
+                        display: none
+                        @media only screen and ( min-width: 768px )
+                          font-size: 14px
+                          display: block
+                        @media only screen and ( min-width: 1200px )
+                          font-size: 16px
+                .menuLink
+                  display: block
+                  font-size: 16px
+                  color: #000
+                  font-weight: 500
+                  text-decoration: none
+                  width: 100%
+                  transition: all .6s
+                  &:hover
+                    color: #F2A90D
+                .dropdown
+                  width: 100%
+                  max-width: 100%
+                  // @media only screen and ( min-width: 768px )
+                  //   max-width: 400px
+                  .dropdown-menu
+                    padding: 0
+                    margin-top: 12px
+                    position: initial !important
+                    transform: none !important
+                    transition: all .8s
+                    .dropdown-item
+                      padding: 5px
+                      font-size: 14px
+                      transition: all .8s
+                      border-bottom: 1px solid #00000038
+                      &:last-of-type
+                        border-bottom: none
+                      &.avtive, &:active
+                        color: #fff
+                        background-color: #F2A90D
+
+                  button
+                    &.dropdown-toggle
+                      background: transparent
+                      border: none
+                      width: 11px
+                      height: 19px
+                      position: absolute
+                      top: -21px
+                      right: 0
+                      &.show
+                        &.open
+                          display: none
+                          &.close
+                            display: block
+                      span
+                        svg
+                          filter: invert(1) !important
+                        &.open
+                          display: block
+                        &.close
+                          display: none
+
+.container
+  max-width: 1625px
+  margin: auto
+  &::before
+    display: none
+
+#mainHeader
+  position: absolute
+  z-index: 3
+  width: 100%
+  top: 30px
+  @media only screen and ( min-width: 768px )
+    top: 50px
+  .container
+    max-width: 1625px
+    margin: auto
+
+  .head
+    background: rgb(0 0 0 / 20%)
+    backdrop-filter: blur(25px)
+    padding: 5px 20px
+    border-radius: 15px
+    @media only screen and ( min-width: 576px )
+      border-radius: 18px
+      padding: 0 20px
+    @media only screen and ( min-width: 768px )
+      border-radius: 22px
+      padding: 0 30px
+    @media only screen and ( min-width: 992px )
+      padding: 0 40px
+    @media only screen and ( min-width: 1200px )
+      padding: 0 60px
+
+  .flxBx
+    display: flex
+    align-items: center
+
+    .logoBx
+      height: auto
+      width: 155px
+      @media only screen and ( min-width: 1200px )
+        width: 180px
+      img
+        width: 100%
+        height: 100%
+        object-fit: contain
+
+    .headSec
+      width: calc( 100% - 155px )
+      padding-left: 40px
+      @media only screen and ( min-width: 1200px )
+        padding-left: 65px
+        width: calc( 100% - 180px )
+      .topMenu
+        display: none
+        align-items: center
+        justify-content: flex-end
+        width: 100%
+        padding: 10px 0
+        @media only screen and ( min-width: 460px )
+          display: flex
+        @media only screen and ( min-width: 576px )
+          border-bottom: 1px solid #fff
+        @media only screen and ( min-width: 992px )
+          padding: 15px 0
+        @media only screen and ( min-width: 1200px )
+          padding: 20px 0
+        @media only screen and ( min-width: 1551px )
+          padding: 25px 0
+
+        .soacialMda
+          display: none
+          margin: -7.5px
+          @media only screen and ( min-width: 560px )
+            display: flex
+          @media only screen and ( min-width: 992px )
+            margin: -10px
+          @media only screen and ( min-width: 1441px )
+            margin: -15px
+          @media only screen and ( min-width: 1551px )
+            margin: -20px
+          li
+            height: auto
+            display: flex
+            align-items: center
+            padding: 7.5px
+            @media only screen and ( min-width: 1200px )
+              padding: 10px
+            @media only screen and ( min-width: 1441px )
+              padding: 15px
+            @media only screen and ( min-width: 1551px )
+              padding: 20px
+            .icon
+              display: flex
+              align-items: center
+              justify-content: center
+              width: 15px
+              height: auto
+              @media only screen and ( min-width: 1200px )
+                width: 20px
+              &.fb
+                svg
+                  width: 8px
+                  @media only screen and ( min-width: 1200px )
+                    width: 11px
+              svg
+                height: 100%
+                width: 14px
+                object-fit: cover
+                @media only screen and ( min-width: 1200px )
+                  width: 19px
+        .logWrap
+          display: flex
+          align-items: center
+          margin-left: 30px
+          @media only screen and ( min-width: 1200px )
+            margin-left: 40px
+          @media only screen and ( min-width: 1441px )
+            margin-left: 50px
+          @media only screen and ( min-width: 1551px )
+            margin-left: 70px
+          .item
+            position: relative
+            &:first-of-type
+              padding-right: 15px
+              @media only screen and ( min-width: 768px )
+                padding-right: 20px
+              @media only screen and ( min-width: 1441px )
+                padding-right: 30px
+
+              &::after
+                content: ''
+                position: absolute
+                right: 0
+                top: 0
+                bottom: 0
+                margin: auto
+                background: #D9D9D9
+                width: 1px
+                height: 25px
+
+            &:last-of-type
+              padding-left: 15px
+              @media only screen and ( min-width: 768px )
+                padding-left: 20px
+              @media only screen and ( min-width: 1441px )
+                padding-left: 30px
+
+            .logBx
+              display: flex
+              align-items: center
+              &:hover
+                .icon
+                  svg
+                    // stoke: #FFEE52
+                .logLnk
+                  color: #FFEE52
+              .icon
+                width: 14px
+                height: auto
+                display: flex
+                align-items: center
+                justify-content: center
+                @media only screen and ( min-width: 768px )
+                  width: 17px
+                svg
+                  width: 100%
+                  height: 100%
+                  object-fit: cover
+                  // stoke: #FFf
+                  transition: all .6s
+              .logLnk
+                font-size: 12px
+                color: #fff
+                text-decoration: none
+                font-weight: 400
+                font-family: "Archivo", sans-serif
+                padding-left: 12px
+                transition: all .6s
+                display: none
+                @media only screen and ( min-width: 768px )
+                  font-size: 14px
+                  display: block
+                @media only screen and ( min-width: 1200px )
+                  font-size: 16px
+
+      .NavMenu
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        .MenuIcon
+          display: flex
+          justify-content: center
+          align-items: center
+          padding: 0px
+          height: 17px
+          width: 18px
+          margin-left: 20px
+          margin: 10px 0
+          position: relative
+          @media only screen and (min-width: 768px)
+            width: 23px
+          @media only screen and (min-width: 992px)
+            display: none
+          button
+            display: block
+            border: none
+            font-size: 0
+            outline: none
+            margin-right: 0
+            margin-top: 0
+            box-shadow: none
+            border-radius: 0
+            background: none
+            height: 100%
+            width: 100%
+            padding: 0
+            span
+              width: 100%
+              height: 2px
+              display: block
+              background: #fff
+              -webkit-transition: all 0.6s ease
+              -moz-transition: all 0.6s ease
+              -ms-transition: all 0.6s ease
+              -o-transition: all 0.6s ease
+              transition: all 0.6s ease
+              position: relative
+              ~ span
+                margin-top: 4px
+
+          &.open
+          &.close
+            opacity: 0
+            visibility: hidden
+        .menuAcco
+          display: none
+          align-items: center
+          justify-content: flex-end
+          width: 100%
+          padding: 10px 0
+          @media only screen and (min-width: 992px)
+            display: flex
+          // margin: -10px -20px
+          .accordion-item
+            background: none
+            border: none
+            .accordion-header
+              background: none
+              .accordion-button
+                background: none
+                border: none
+                border-bottom: none
+                box-shadow: none
+                padding: 8px 10px
+                @media only screen and ( min-width: 1200px )
+                  padding: 15px
+                @media only screen and ( min-width: 1441px )
+                  padding: 20px 25px
+                @media only screen and ( min-width: 1551px )
+                  padding: 25px 30px
+                &::after
+                  display: none
+                &:hover
+                  .menuLink
+                    color: #F2A90D
+                .dropdown
+                  .dropdown-toggle
+                    background: no-repeat
+                    border: none
+                    box-shadow: none
+                    span
+                      transition: all .6s
+                      &.close
+                        display: none
+                      &.open
+                        display: block
+
+                    &[aria-expanded="true"]
+                      span
+                        &.close
+                          display: block
+                        &.open
+                          display: none
+                    &::after
+                      display: none
+                  .dropdown-menu
+                    min-width: 200px
+                    padding: 15px
+                    .dropdown-item
+                      font-size: 12px
+                      color: #000
+                      text-decoration: none
+                      border-bottom: 1px solid #F2A90D
+                      padding: 5px 0
+                      font-weight: 400
+                      font-family: "Archivo", sans-serif
+                      padding-left: 12px
+                      transition: all .6s
+                      @media only screen and ( min-width: 768px )
+                        font-size: 14px
+                      @media only screen and ( min-width: 1200px )
+                        font-size: 16px
+                      &:hover
+                        background: #F2A90D
+                        color: #fff
+                      &.active
+                        background: #F2A90D
+                        color: #fff
+
+            .menuLink
+              display: block
+              font-size: 12px
+              font-weight: 400
+              color: #fff
+              text-decoration: none
+              font-family: "Archivo", sans-serif
+              padding-left: 12px
+              transition: all .6s
+              @media only screen and ( min-width: 768px )
+                font-size: 14px
+              @media only screen and ( min-width: 1200px )
+                font-size: 16px
+              &:hover
+                color: #F2A90D

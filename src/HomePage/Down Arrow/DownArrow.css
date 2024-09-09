@@ -1,0 +1,27 @@
+/* src/components/DownArrow.css */
+
+.down-arrow {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid white;
+    animation: bounce 2s infinite; /* Add a bounce animation */
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  

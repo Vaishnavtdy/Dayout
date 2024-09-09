@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.slider-container {
+  width: 100vw;  /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide the overflowing slides */
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  transition: transform 1s ease-in-out; /* Smooth transition */
+  height: 100%; /* Ensure the wrapper takes full height */
+}
+
+.slide {
+  width: 100vw;  /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.slide-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ensures the image covers the slide area */
+}

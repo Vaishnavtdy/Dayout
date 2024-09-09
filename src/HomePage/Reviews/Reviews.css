@@ -1,0 +1,29 @@
+
+.containerreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    margin-left: 100px;
+    margin-right: 100px;
+    /* This ensures the container takes the full height of the viewport */
+  }
+  
+  /* Style the text field */
+  #textFieldreview {
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+  
+  /* Style the horizontal list */
+  .horizontalListreview {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .horizontalListreview > div {
+    margin-right: 10px;
+  }
+  

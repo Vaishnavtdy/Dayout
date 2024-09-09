@@ -1,0 +1,44 @@
+.card-list-container
+  width: 100%
+  max-width: 1200px /* Adjust the maximum width as needed */
+  margin: 0 auto
+
+.heading-container
+  text-align: center
+  margin-bottom: 20px
+
+.row-gap3
+  margin-top: -15px /* Adjust the top margin to align with the heading */
+
+.col-cardStyles
+  margin-bottom: 30px /* Adjust the bottom margin for space between cards */
+
+.card
+  width: 100%
+  height: 370px
+  border: none
+  transition: transform 0.3s
+  overflow: hidden
+  font-size: 20px
+
+  &:hover
+    transform: scale(1.05)
+
+  &-image
+    position: relative
+    height: 100%
+
+  & img
+    width: 100%
+    height: 370px
+    object-fit: cover
+
+.overlay-text-bottom
+  position: absolute
+  bottom: 0
+  left: 10
+  width: 100%
+  background-color: rgba(0, 0, 0, 0.7)
+  color: white
+  padding: 20px
+  text-align: center

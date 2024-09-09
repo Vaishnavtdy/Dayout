@@ -1,0 +1,99 @@
+/* ImageWithTextPage.css */
+
+.text-row {
+    display: flex;
+    flex-direction: row; /* Horizontal alignment */
+  }
+  
+  .column {
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  .text-element {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 150px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+/* Reset some default styles */
+
+  
+  .column {
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a minimum height for the body to cover the entire viewport */
+body {
+    min-height: 100vh;
+}
+
+/* Style for the main container holding the left and right sides */
+.containerof {
+    display: flex;
+    margin-top: 80px; 
+    margin-left: 280px/* Adjust the margin-top value to add space at the top */
+}
+
+/* Style for the left side with the image view */
+.left-side {
+    flex: 1;
+
+}
+
+/* Style for the image view */
+.image-view {
+    width: 100%;
+    height: 800px;
+    width: 600px;
+   
+}
+
+/* Style for the right side with four rows of three texts */
+.right-side {
+   margin-right: 250px;
+}
+
+/* Style for each row of texts */
+.text-row {
+    display: flex;
+    flex-direction: column; /* Display texts in a vertical column */
+    margin-bottom: 19px; /* Adjust the vertical space as needed */
+}
+
+/* Style for each text element */
+.text-elementBlue {
+    flex: 1;
+    font-size: 23px; /* Set the font size to 16 pixels */
+    padding: 10px;
+    margin: 2px;
+    box-sizing: border-box;
+    color:mediumturquoise;
+}
+.text-elementOrange {
+    flex: 1;
+    font-size: 22px; /* Set the font size to 16 pixels */
+    padding: 10px;
+    margin: 2px;
+    box-sizing: border-box;
+    color:orange;
+}
+.text-element {
+    flex: 1;
+    font-size: 18px; /* Set the font size to 16 pixels */
+    padding: 10px;
+    margin: 2px;
+    box-sizing: border-box;
+    color:black;
+}
+/* Add any additional styling as needed */

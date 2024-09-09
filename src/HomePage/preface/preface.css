@@ -1,0 +1,83 @@
+.home {
+    /* Your existing styles */
+    margin: 20px; /* Add your desired margin value */
+
+    /* background: url('../assets/whiteImage.jpeg') center center/cover no-repeat; */
+}
+
+
+
+/* ... (rest of your styles) ... */
+
+.home h2 {
+    padding: 100px 0px 0px 200px;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.c-orange {
+    color: #fec134;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.home p {
+    padding: 1px 0px 0px 200px;
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.9rem;
+}
+
+.h-btn:hover {
+    background: #fec134;
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fca61f;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #fec834;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover {
+    color: #fea034;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.home img {
+    padding: 100px 100px 0px 0px;
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+/* @keyframes floatimg {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-24px);
+    }
+    100%{
+        transform: translateX(0);
+    } */
+/* } */

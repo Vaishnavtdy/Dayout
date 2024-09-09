@@ -1,0 +1,240 @@
+.footer
+    // margin-top: 80px
+    background-color: #000
+    .container
+        max-width: 1643px
+        margin: auto
+        padding: 0 15px
+.end
+    border-top: 1px solid #4D4D4D
+    padding: 20px 0 20px
+    @media only screen and ( min-width: 576px )
+        padding: 30px 0 20px
+    @media only screen and ( min-width: 768px )
+        padding: 40px 0 20px
+    @media only screen and ( min-width: 1200px )
+        padding: 50px 0 20px
+    .flxWrap
+        display: flex
+        flex-wrap: wrap
+        margin: -7px
+        justify-content: center
+        align-items: center
+        @media only screen and ( min-width: 576px )
+            margin: -10px
+            justify-content: space-between
+        >*
+            width: fit-content
+            padding: 7px
+            @media only screen and ( min-width: 576px )
+                padding: 10px
+        .txt
+            text-align: center
+            font-size: 12px
+            color: #fff
+            font-family: "Exo 2", sans-serif
+            @media only screen and ( min-width: 576px )
+                font-size: 14px
+            @media only screen and ( min-width: 1200px )
+                font-size: 16px
+.foot
+    // padding: 20px 0
+
+    .footer-content
+        padding: 40px 0
+        @media only screen and ( min-width: 768px )
+            padding: 60px 0 40px
+        @media only screen and ( min-width: 1200px )
+            padding: 80px 0 60px
+        @media only screen and ( min-width: 1551px )
+            padding: 100px 0 70px
+        @media only screen and ( min-width: 1661px )
+            padding: 150px 0 80px
+        .dFlex
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column-reverse
+            @media only screen and ( min-width: 1200px )
+                flex-direction: row
+            .lft
+                width: 100%
+                @media only screen and ( min-width: 1200px )
+                    width: calc( 100% - 280px)
+                @media only screen and ( min-width: 1441px )
+                    width: calc( 100% - 300px)
+                @media only screen and ( min-width: 1551px )
+                    width: calc( 100% - 370px)
+                .linkWrap
+                    .accordion
+                        display: flex
+                        flex-wrap: wrap
+                        .accordion-item
+                            background-color: transparent
+                            border: none
+                            width: calc(100% / 1 )
+                            @media only screen and ( min-width: 500px )
+                                width: calc(100% / 2 )
+                            @media only screen and ( min-width: 768px )
+                                width: 23%
+                            @media only screen and ( min-width: 1441px )
+                                width: calc(100% / 4 )
+                            &:nth-child(4)
+                                @media only screen and ( min-width: 768px )
+                                    width: 30%
+                                @media only screen and ( min-width: 1441px )
+                                    width: calc(100% / 4 )
+
+                            @media only screen and ( min-width: 1441px )
+                            .accordion-header
+                                .accordion-button
+                                    color: #fff
+                                    font-family: "Exo 2", sans-serif
+                                    font-weight: 600
+                                    line-height: 30px
+                                    text-align: left
+                                    background-color: transparent
+                                    text-transform: uppercase
+                                    padding: 0
+                                    font-size: 14px
+                                    padding-bottom: 15px
+                                    @media only screen and ( min-width: 768px )
+                                        font-size: 16px
+                                        padding-bottom: 20px
+                                    @media only screen and ( min-width: 1200px )
+                                        font-size: 18px
+                                    &:not(.collapsed)
+                                        border: none
+                                        box-shadow: none
+                                        pointer-events: all
+                                        @media only screen and ( min-width: 500px )
+                                            pointer-events: none
+                                    &:after
+                                        filter: brightness(25)
+                                        @media only screen and ( min-width: 500px )
+                                            display: none
+                                    &:focus
+                                        box-shadow: none
+                            .accordion-collapse
+                                &.collapse
+                                    &:not(.show)
+                                        @media only screen and ( min-width: 500px )
+                                            display: block
+                                .accordion-body
+                                    padding: 0
+                                    .footLink
+                                        .contLnk
+                                            .txtWrap
+                                                display: flex
+                                                color: #fff
+                                                font-family: "Exo 2", sans-serif
+                                                .txt
+                                                    white-space: nowrap
+
+                                                .txt, .lnk
+                                                    text-decoration: none
+                                                    color: #fff
+                                                    font-family: "Exo 2", sans-serif
+                                                    font-size: 14px
+                                                    @media only screen and ( min-width: 1200px )
+                                                        font-size: 16px
+                                                    @media only screen and ( min-width: 1441px )
+                                                        font-size: 18px
+                                                .lnk
+                                                    padding-left: 5px
+                                                    word-break: break-word
+                                                    &:hover
+                                                        color: #F2A90D
+
+                                        .menuLnk
+                                            padding: 0
+                                            li
+                                                margin-bottom: 7px
+                                                @media only screen and ( min-width: 576px )
+                                                    margin-bottom: 10px
+                                                @media only screen and ( min-width: 768px )
+                                                    margin-bottom: 15px
+                                                .lnk
+                                                    color: #fff
+                                                    display: block
+                                                    text-decoration: none
+                                                    font-family: "Exo 2", sans-serif
+                                                    font-weight: 600
+                                                    line-height: 30px
+                                                    text-align: left
+                                                    transition: all .6s
+                                                    font-size: 14px
+                                                    @media only screen and ( min-width: 1200px )
+                                                        font-size: 16px
+                                                    @media only screen and ( min-width: 1441px )
+                                                        font-size: 18px
+                                                    &:hover
+                                                        color: #F2A90D
+                                        .socialLnk
+                                            display: flex
+                                            flex-wrap: wrap
+                                            padding-left: 0
+                                            margin: -7px
+                                            @media only screen and ( min-width: 1441px )
+                                                margin: -10px
+                                            @media only screen and ( min-width: 1661px )
+                                                margin: -15px
+                                            li
+                                                padding: 7px
+                                                @media only screen and ( min-width: 1441px )
+                                                    padding: 10px
+                                                @media only screen and ( min-width: 1661px )
+                                                    padding: 15px
+                                                .lnk
+                                                    display: flex
+                                                    align-items: center
+                                                    justify-content: center
+                                                    &.fb
+                                                        svg
+                                                            width: 18px
+                                                            @media only screen and ( min-width: 1441px )
+                                                                width: 26px
+                                                    &.twtr
+                                                        svg
+                                                            width: 15px
+                                                            @media only screen and ( min-width: 1441px )
+                                                                width: 20px
+                                                    svg
+                                                        height: auto
+                                                        width: 16px
+                                                        @media only screen and ( min-width: 1441px )
+                                                            width: 22px
+
+            .ryt
+                padding-bottom: 30px
+                max-width: 900px
+                @media only screen and ( min-width: 1200px )
+                    width: 280px
+                    padding-bottom: 0
+                @media only screen and ( min-width: 1441px )
+                    width: 300px
+                @media only screen and ( min-width: 1551px )
+                    width: 370px
+                .logoBX
+                    .logo
+                        overflow: hidden
+                        width: 150px
+                        @media only screen and ( min-width: 576px )
+                            width: 210px
+                        @media only screen and ( min-width: 768px )
+                            width: 280px
+                        @media only screen and ( min-width: 1200px )
+                            width: 100%
+                        img
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+                    .txt
+                        color: #fff
+                        display: block
+                        text-decoration: none
+                        font-family: "Exo 2", sans-serif
+                        font-size: 14px
+                        @media only screen and ( min-width: 1200px )
+                            font-size: 16px
+                        @media only screen and ( min-width: 1551px )
+                            font-size: 18px

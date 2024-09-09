@@ -1,0 +1,71 @@
+/* src/components/AnimatedText.css */
+
+.animated-text {
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9em;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0.5s;
+  transition: opacity 0.5s, transform 2s;
+  font-weight: bold;
+  text-align: center; /* Center the text */
+}
+
+.animated-text.animate {
+  opacity: 1;
+  transform: translateY(40vh) translateX(-50%);
+}
+
+.main-text {
+  font-size: 0.7em;
+  margin-bottom: 0em; 
+   /* Adjust the spacing between main and sub text */
+}
+.yellow-text {
+  color: rgb(255, 174, 0);
+}
+
+.black-text {
+  color: black;
+}
+.sub-text {
+ 
+  font-size: 0.6em; /* Adjust the font size of the sub text */
+  color: #4b4949; /* Adjust the color of the sub text */
+}
+.title h1{
+  font-size:  0.3em;
+  text-shadow: 2px rgb(60, 58, 58);
+  transition: ease 0.3s;
+}
+
+.title h1:hover{
+  color:transparent;
+  -webkit-text-stroke: 1px white;
+  
+}
+.button{
+  display: inline-block;
+  margin-top:5vh;
+  font-size: 25px;
+  padding: 10px 30px;
+  color: rgb(157, 199, 199);
+  /* background-color:rgb(164, 44, 44); */
+  background-color: rgb(84, 81, 81);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: ease 0.30s;
+}
+
+.button:hover{
+  transform: scale(1.1);
+  color: white;
+  background-color: rgb(21, 74, 74);
+  /* border: 2px solid rgb(42, 37, 68); */
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+  padding: 10px 30px;
+}

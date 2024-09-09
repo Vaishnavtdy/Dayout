@@ -1,0 +1,56 @@
+/* EnquiryPage.css */
+.main-backgroundr {
+    background-image: url('/src/HomePage/assets/bg.jpg'); /* Greenish background for the main content */
+    width: 100%; /* Full width of the body */
+    height: 100vh; /* Full height of the body */
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+  }
+.enquiry-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f3ecec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 50%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

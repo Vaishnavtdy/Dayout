@@ -1,0 +1,130 @@
+/* YourComponent.css */
+
+.adventurepage {
+    background-color: #f0f0f0; /* Set the background color of the page */
+    min-height: 100vh; /* Set minimum height to fill the entire viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .adventurecontainer {
+    background-color: white; /* Set the background color of the container */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    width: 70%;
+    height: 100%; /* Adjust the width of the container as needed */
+  }
+  
+  .adventuretextarea {
+    width: 100%;
+    height: 100%;
+    resize: none; /* Prevent textarea resizing */
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  .adventureDetailimage{
+    width: 50%;
+    height: 50%;
+  }
+  .hrLine {
+    border-top: 2px solid #595757; /* Customize the line color and style */
+    margin-bottom: 0px ; 
+    width: 100%;
+    height: 1pc;
+    /* Adjust the margin as needed */
+  }
+
+  .additionalDivs {
+    display: flex;
+    margin-top: 0px; /* Adjust the margin as needed */
+  }
+  
+  .additionalDiv {
+    /* Adjust the width as needed */
+   /* Optional: Add a border for separation */
+    padding: 10px;
+    margin-top: 0px;
+    font-size: 16px;
+  }
+  .additionalDiv.selected {
+    border-bottom: 2px solid blue; /* Adjust the color as needed */
+  }
+  
+  /* Add this CSS for a generic underline */
+  .additionalDiv {
+    border-bottom: 2px solid transparent; /* Set the initial color as transparent */
+    cursor: pointer;
+  }
+  
+  /* Adjust this CSS to style the content container */
+  .contentContainer {
+    padding: 10px;
+    /* Add more styles as needed */
+  }
+  .text-elementunderline {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 20px;
+    /* Add padding for better visibility */
+  }
+  .reviewcontainer {
+    background-color: white; /* Set the background color of the container */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    width: 90%;
+    height: 100%;
+    border-color: black; 
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;/* Adjust the width of the container as needed */
+  }
+  /* MyComponent.css */
+
+  .horizontalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+  }
+  
+  .horizontalFields {
+    display: flex;
+    width: 100%;
+  }
+  
+  .formRow {
+    flex: 2;
+    margin: 10px;
+  }
+  
+  .customInput {
+    width: 100px; /* Set the width to 100% to take up the entire width of the formRow */
+    height: 50px; /* Set your desired height */
+    /* Add more styles as needed */
+  }
+  .submitButton {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4caf50; /* Green color, you can customize */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%;
+  }
+  
+  .submitButton:hover {
+    background-color: #45a049; /* Darker green color on hover, you can customize */
+  }
+  .formField {
+    margin: 10px;
+    text-align: center;
+    width: 100px;
+  }
+  .viewCartButton{
+    margin-top: 10px;
+  }
