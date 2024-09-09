@@ -128,7 +128,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
             <div className="subHd">"At Dayout Holidays, we bring you the best of Goa with tailor-made packages that combine adventure, relaxation, and unmatched service. From stunning beaches to exciting water sports and personalized travel plans, we ensure your holiday is nothing short of extraordinary."</div>
             <a href="#!" className="btnMore hoverAnim">
               <span>
-                More Details !
+                Enquire Now
               </span>
             </a>
           </div>
@@ -157,8 +157,8 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                   </svg>
                 </div>
                 <div className="txtWrap">
-                  <div className="count">15 <span>+</span></div>
-                  <div className="txt">destination</div>
+   
+                  <div className="txt">Trusted and Safe</div>
                 </div>
               </div>
             </div>
@@ -172,7 +172,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                 </div>
                 <div className="txtWrap">
                   {/* <div className="count">15 <span>+</span></div> */}
-                  <div className="txt">Affordable price</div>
+                  <div className="txt">Unmatched Customer Satisfaction</div>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                 </div>
                 <div className="txtWrap">
                   {/* <div className="count">15 <span>+</span></div> */}
-                  <div className="txt">Great customers</div>
+                  <div className="txt">Single Destination Expertise (Goa)</div>
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@ const VideoPlayer: React.FC = ({ data }: any) => {
                 </div>
                 <div className="txtWrap">
                   {/* <div className="count">15 <span>+</span></div> */}
-                  <div className="txt">trusted & Safe</div>
+                  <div className="txt">Affordable Pricing</div>
                 </div>
               </div>
             </div>
