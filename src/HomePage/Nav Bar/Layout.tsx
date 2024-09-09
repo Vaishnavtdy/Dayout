@@ -171,7 +171,7 @@ const Layout: React.FC = () => {
                                     <Accordion className="menuAcco" defaultActiveKey="0">
                                         <Accordion.Item eventKey="0">
                                             <Accordion.Header>
-                                                <a href="" className="menuLink">Home</a>
+                                                <a href="#" className="menuLink">Home</a>
                                             </Accordion.Header>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="1">
@@ -191,7 +191,7 @@ const Layout: React.FC = () => {
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="6">
                                             <Accordion.Header>
-                                                <a href="" className="menuLink">Contact</a>
+                                                <a href="#enquire_now" className="menuLink">Contact</a>
                                             </Accordion.Header>
                                         </Accordion.Item>
 
