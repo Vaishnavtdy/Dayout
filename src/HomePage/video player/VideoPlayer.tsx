@@ -35,6 +35,7 @@ import DatePicker from 'react-datepicker';
 import VerticalSlider from '../Slider/VerticalSlider';
 import { Form } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
+import Testimonials from '../Testimonials/Testimonials';
 
 const VideoPlayer: React.FC = ({ data }: any) => {
   console.log("data==>", data);
@@ -868,6 +869,10 @@ const VideoPlayer: React.FC = ({ data }: any) => {
           </div>
         </div>
       </div>
+      <section>
+        <Testimonials/>
+      </section>
+
     </div>
   );
 };

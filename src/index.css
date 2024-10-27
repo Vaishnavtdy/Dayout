@@ -35,3 +35,16 @@ code {
 .form-box{
   justify-content: end !important;
 }
+
+.swiper-slide.swiper-slide-active {
+  opacity: 1 !important;
+  background-color: #38261C;
+  /* margin-top: 0px !important; */
+  transform: translateY(0) !important;
+}
+
+.swiper-wrapper {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
