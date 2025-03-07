@@ -148,6 +148,12 @@
           text-align: left;
           text-transform: unset !important;
           color: #ffffff;
+
+
+          @media only screen and (max-width: 700px) {
+            font-size: 14px;
+            line-height: 20px;
+          }
         }
       }
     }
